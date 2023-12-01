@@ -1,8 +1,8 @@
 {
-  "name": "trebuchet",
+  "name": "trebuchet-part-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "node ./src/main.js"
   },
