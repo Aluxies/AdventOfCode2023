@@ -29,12 +29,11 @@ for ( const line of lines ) {
     const firtDigitNumber = digits[0];
     const lastDigitNumber = digits[digits.length - 1];
     const calibrationValueString = `${firtDigitNumber}${lastDigitNumber}`;
-    
-    console.log( `Calibration value string : ${calibrationValueString}` );
 
     const calibrationValueNumber = Number(calibrationValueString);
 
-    console.log( "Calibration value number :" );
-    console.log( calibrationValueNumber );
+    sum += calibrationValueNumber;
 
 };
+
+console.log( `Final sum : ${sum}` );
