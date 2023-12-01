@@ -29,8 +29,10 @@ for ( const line of lines ) {
     const lastDigitNumber = digits[digits.length - 1];
 
     console.log( `FirstDigitNumber : ${firtDigitNumber}` );
-    console.log( `LastDigitNumber : ${lastDigitNumber}` );
+    console.log( `LastDigitNumber : ${lastDigitNumber}` )
 
-    console.log( digits );
+    const calibrationValueString = `${firtDigitNumber}${lastDigitNumber}`;
+    
+    console.log( `Calibration value string : ${calibrationValueString}` );
 
 };
