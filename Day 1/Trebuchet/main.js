@@ -22,8 +22,14 @@ for ( const line of lines ) {
 
         if( isNaN( Number( c ) ) ) return c;
         else return Number( c );
-        
+
     }).filter( c => typeof c === 'number' );
+
+    const firtDigitNumber = digits[0];
+    const lastDigitNumber = digits[digits.length - 1];
+
+    console.log( `FirstDigitNumber : ${firtDigitNumber}` );
+    console.log( `LastDigitNumber : ${lastDigitNumber}` );
 
     console.log( digits );
 
