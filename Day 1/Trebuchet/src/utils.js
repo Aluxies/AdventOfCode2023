@@ -23,6 +23,9 @@ function getFileData( filePath ) {
 
 function getDataLines( data ) {
 
+    const lines = data.split( '\n' );
+
+    return lines;
 
 };
 

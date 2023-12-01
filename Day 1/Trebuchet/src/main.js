@@ -4,7 +4,8 @@ const puzzlesInputsPathFile = '../data/puzzle-inputs.txt';
 
 const data = getFileData( puzzlesInputsPathFile );
 
-const lines = data.split( '\n' );
+const lines = getDataLines( data );
+
 let sum = 0;
 
 for ( const line of lines ) {
