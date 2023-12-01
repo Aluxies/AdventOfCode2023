@@ -23,3 +23,9 @@ const exampleLines = getDataLines( exampleData );
 const exampleSum = calculateSumOfCalibrationValuesFromLines( exampleLines );
 
 console.log( `Final sum for example file : ${exampleSum}` );
+
+if ( exampleSum === 281 ) {
+
+    console.log( `SUM FOR EXAMPLE FILE CORRECT !!` );
+
+};
