@@ -1,3 +1,4 @@
+const { clear } = require('console');
 const fs = require('fs');
 
 let data;
@@ -27,12 +28,13 @@ for ( const line of lines ) {
 
     const firtDigitNumber = digits[0];
     const lastDigitNumber = digits[digits.length - 1];
-
-    console.log( `FirstDigitNumber : ${firtDigitNumber}` );
-    console.log( `LastDigitNumber : ${lastDigitNumber}` )
-
     const calibrationValueString = `${firtDigitNumber}${lastDigitNumber}`;
     
     console.log( `Calibration value string : ${calibrationValueString}` );
+
+    const calibrationValueNumber = Number(calibrationValueString);
+
+    console.log( "Calibration value number :" );
+    console.log( calibrationValueNumber );
 
 };
