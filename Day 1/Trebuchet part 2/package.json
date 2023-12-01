@@ -1,0 +1,11 @@
+{
+  "name": "trebuchet-part-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
