@@ -37,24 +37,18 @@ function calculateSumOfCalibrationValuesFromLines( lines ) {
 
         const characters = line.split( '' ).filter( c => c !== '\r' );
 
-        console.log( `characters : ${JSON.stringify(characters)}` );
-
         const digits = characters.map( c => {
     
             if( isNaN( Number( c ) ) ) return c;
             else return Number( c );
     
         }).filter( c => typeof c === 'number' );
-
-        console.log( `digits : ${digits}` );
     
         const firtDigitNumber = digits[0];
         const lastDigitNumber = digits[digits.length - 1];
         const calibrationValueString = `${firtDigitNumber}${lastDigitNumber}`;
     
         const calibrationValueNumber = Number(calibrationValueString);
-
-        console.log( calibrationValueNumber );
     
         sum += calibrationValueNumber;
     
