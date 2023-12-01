@@ -1,10 +1,13 @@
 const fs = require('fs');
+const path = require('path');
+
+const pathResolved = path.resolve(__dirname, '../data/puzzle-inputs.txt' );
 
 let data;
 
 try {
 
-    data = fs.readFileSync( 'puzzle-inputs.txt', 'utf8' );
+    data = fs.readFileSync( pathResolved, 'utf8' );
     
 } catch( e ) {
 
