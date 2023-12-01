@@ -1,19 +1,8 @@
-const fs = require('fs');
-const path = require('path');
+const { getFileData, getDataLines } = require('./utils');
 
-const pathResolved = path.resolve(__dirname, '../data/puzzle-inputs.txt' );
+const puzzlesInputsPathFile = '../data/puzzle-inputs.txt';
 
-let data;
-
-try {
-
-    data = fs.readFileSync( pathResolved, 'utf8' );
-    
-} catch( e ) {
-
-    console.log( 'Error:', e.stack );
-
-};
+const data = getFileData( puzzlesInputsPathFile );
 
 const lines = data.split( '\n' );
 let sum = 0;
