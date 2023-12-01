@@ -6,10 +6,20 @@ const {
 
 const puzzlesInputsPathFile = '../data/puzzle-inputs.txt';
 
-const data = getFileData( puzzlesInputsPathFile );
+const puzzlesInputsData = getFileData( puzzlesInputsPathFile );
 
-const lines = getDataLines( data );
+const puzzlesInputsLines = getDataLines( puzzlesInputsData );
 
-const sum = calculateSumOfCalibrationValuesFromLines( lines );
+const puzzlesInputsSum = calculateSumOfCalibrationValuesFromLines( puzzlesInputsLines );
 
-console.log( `Final sum : ${sum}` );
+console.log( `Final sum for puzzle-inputs file : ${puzzlesInputsSum}` );
+
+const examplePathFile = '../data/example.txt';
+
+const exampleData = getFileData( examplePathFile );
+
+const exampleLines = getDataLines( exampleData );
+
+const exampleSum = calculateSumOfCalibrationValuesFromLines( exampleLines );
+
+console.log( `Final sum for example file : ${exampleSum}` );
