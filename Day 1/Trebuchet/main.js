@@ -12,13 +12,19 @@ try {
 
 };
 
-const lines = data.split('\n');
+const lines = data.split( '\n' );
 let sum = 0;
 
 for ( const line of lines ) {
 
-    const characters = line.split('');
+    const characters = line.split( '' );
+    const digits = characters.map( c => {
 
-    console.log( characters );
+        if( isNaN( Number( c ) ) ) return c;
+        else return Number( c );
+        
+    }).filter( c => typeof c === 'number' );
+
+    console.log( digits );
 
 };
