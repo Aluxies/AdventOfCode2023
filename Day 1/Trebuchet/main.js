@@ -13,9 +13,12 @@ try {
 };
 
 const lines = data.split('\n');
+let sum = 0;
 
 for ( const line of lines ) {
 
-    console.log( line );
+    const characters = line.split('');
+
+    console.log( characters );
 
 };
